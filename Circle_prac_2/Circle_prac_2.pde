@@ -1,7 +1,7 @@
 float _cy = 0.00; //Circles x location
 float _cx = 0.00; //Circles x location
-float _cdx = 5; //speed
-float _cdy = 5; //speed
+float _cdx = random(1,50); //speed
+float _cdy = random(1,15); //speed
 
 void setup() //Window Maker
 {
