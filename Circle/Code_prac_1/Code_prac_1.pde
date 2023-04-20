@@ -1,21 +1,26 @@
-float _cx = 0.01;
-float _cd = 400;
+float _cx = 0.01; //Circles x location
+float _cd = 5; //speed
 
-void setup()
+void setup() //Window Maker
 {
- size (800,600);
+  float whatever = 100.0;
+ size (400,00); //set size 
 }
 
 void draw()
 {
-  noStroke();
-  fill(0);
-  rect(0,0,width,height);
-  fill(255);
- circle(_cx,height/2,40);
- _cx = _cx +  _cd;
-  if(_cx > width || _cx < 0) 
+  noStroke(); //removes outline
+  fill(0,0,0,10); //Fills rectangle
+  rect(0,0,width,height); //Makes the background
+  fill(255); //Sets the circle to white
+ circle(_cx,height/2,40); //Makes Circle
+ _cx = _cx +  _cd; //Moves the circle
+  if(_cx > width || _cx < 0) //checks to see if it is > width or < 0
   {
-   _cd = _cd * (-1);
+   _cd = _cd * (-1); //If either is true it activates multiplying current by -1
+  }
+  else
+  {
+    
   }
 }
